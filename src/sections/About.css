@@ -1,0 +1,87 @@
+.about { padding: 8rem 0; }
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 4rem;
+  margin-top: 3rem;
+  align-items: start;
+}
+.about-body {
+  font-family: var(--font-body);
+  font-weight: 400;
+  color: rgba(240,240,245,0.68);
+  line-height: 1.82;
+  margin-bottom: 1.2rem;
+  font-size: 1.01rem;
+}
+.about-body strong {
+  color: var(--text);
+  font-weight: 600;
+}
+.about-links { display: flex; gap: 1rem; margin-top: 2rem; flex-wrap: wrap; }
+.about-link {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.85rem;
+  color: var(--accent);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border: 1px solid rgba(0,229,160,0.3);
+  border-radius: 8px;
+  transition: all 0.2s;
+  letter-spacing: 0.01em;
+}
+.about-link:hover { background: rgba(0,229,160,0.08); }
+.about-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+.about-card-header {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+.edu-degree {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-style: italic;
+  color: var(--accent);
+  letter-spacing: -0.01em;
+}
+.edu-inst {
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--text);
+  margin: 0.4rem 0;
+  line-height: 1.4;
+}
+.edu-meta {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+}
+.course-list { list-style: none; display: flex; flex-direction: column; gap: 0.7rem; }
+.course-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: rgba(240,240,245,0.75);
+  line-height: 1.5;
+}
+.course-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--accent2); flex-shrink: 0; }
+@media (max-width: 900px) {
+  .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+}

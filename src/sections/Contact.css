@@ -1,0 +1,83 @@
+.contact { padding: 8rem 0 0; }
+.contact-inner { max-width: 700px; }
+.contact-heading {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 600;
+  font-style: italic;
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+  margin-top: 1.5rem;
+  margin-bottom: 1.2rem;
+}
+.contact-heading em { color: var(--accent); font-style: normal; }
+.contact-sub {
+  font-family: var(--font-body);
+  font-weight: 400;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.75;
+  margin-bottom: 2.5rem;
+  max-width: 540px;
+}
+.contact-cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-bottom: 2.5rem; }
+.contact-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.25rem 1.5rem;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  transition: all 0.2s;
+}
+.contact-card:hover { border-color: var(--accent); background: rgba(0,229,160,0.04); transform: translateY(-2px); }
+.contact-card.primary { border-color: rgba(0,229,160,0.35); }
+.cc-icon {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--accent);
+}
+.cc-label {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+}
+.cc-val {
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text);
+  letter-spacing: 0.005em;
+}
+.contact-cta { display: flex; align-items: center; gap: 2rem; flex-wrap: wrap; }
+.big-cta { font-size: 0.95rem; padding: 0.85rem 2rem; }
+.contact-phone {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+}
+.site-footer {
+  margin-top: 6rem;
+  border-top: 1px solid var(--border);
+  padding: 1.5rem 0;
+}
+.site-footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+}
+.footer-right { color: rgba(107,107,126,0.5); }
+@media (max-width: 600px) {
+  .contact-cards { grid-template-columns: 1fr; }
+  .site-footer .container { flex-direction: column; gap: 0.5rem; text-align: center; }
+}
