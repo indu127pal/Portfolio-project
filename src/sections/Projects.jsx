@@ -10,7 +10,7 @@ const projects = [
     stack: ['React', 'Next.js', 'Remix', 'Redux Toolkit', 'Python', 'Kubernetes', 'Docker'],
     highlights: ['Streaming token output with real-time UI updates', 'Migration from CRA → Remix (50% faster page loads)', '80%+ test coverage with Jest + Playwright E2E', 'Reusable theming design system used across 3 products'],
     github: 'https://github.com/indu127pal',
-    demo: '#',
+    demo: 'https://cloud.sambanova.ai/dashboard',
     icon: '🤖',
     featured: true,
   },
