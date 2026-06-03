@@ -3,6 +3,18 @@ import './Projects.css'
 
 const projects = [
   {
+    title: 'SambaVerse GenAI Platform',
+    category: 'AI / Professional',
+    categoryColor: '#7c6ff7',
+    desc: 'The flagship AI platform at SambaNova Systems showcasing large-language model capabilities. A sophisticated full-stack application with streaming inference, model benchmarks, prompt playground, and enterprise access controls.',
+    stack: ['React', 'Next.js', 'Remix', 'Redux Toolkit', 'Python', 'Kubernetes', 'Docker'],
+    highlights: ['Streaming token output with real-time UI updates', 'Migration from CRA → Remix (50% faster page loads)', '80%+ test coverage with Jest + Playwright E2E', 'Reusable theming design system used across 3 products'],
+    github: 'https://github.com/indu127pal',
+    demo: '#',
+    icon: '🤖',
+    featured: true,
+  },
+  {
     title: 'PayFlow Dashboard',
     category: 'Fintech',
     categoryColor: '#06d6a0',
@@ -56,18 +68,6 @@ const projects = [
     github: 'https://github.com/indu127pal',
     demo: '#',
     icon: '👗',
-  },
-  {
-    title: 'SambaVerse GenAI Platform',
-    category: 'AI / Professional',
-    categoryColor: '#7c6ff7',
-    desc: 'The flagship AI platform at SambaNova Systems showcasing large-language model capabilities. A sophisticated full-stack application with streaming inference, model benchmarks, prompt playground, and enterprise access controls.',
-    stack: ['React', 'Next.js', 'Remix', 'Redux Toolkit', 'Python', 'Kubernetes', 'Docker'],
-    highlights: ['Streaming token output with real-time UI updates', 'Migration from CRA → Remix (50% faster page loads)', '80%+ test coverage with Jest + Playwright E2E', 'Reusable theming design system used across 3 products'],
-    github: 'https://github.com/indu127pal',
-    demo: '#',
-    icon: '🤖',
-    featured: true,
   },
 ]
 

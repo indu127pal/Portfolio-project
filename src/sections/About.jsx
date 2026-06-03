@@ -34,17 +34,33 @@ export default function About() {
           </div>
 
           <div className="about-courses">
-            <p className="section-label" style={{ marginTop: '1.5rem' }}>Certifications</p>
+            <p className="cert-label" style={{ margin: '2rem 0' }}>Licenses & certifications</p>
             {[
-              'Advanced React For Enterprise: React for senior engineers',
-              'Working with Microservices in Go (Golang)',
-              'The Ultimate Redux Course 2024',
-              'Docker and Kubernetes: The Practical Guide [2025]',
-              'Playwright: Web Automation Testing From Zero to Hero',
+              { title: 'Generative AI 2025 Executive Briefing: LLMs for Leaders', provider: 'Udemy', providerIcon: '🎓', issued: 'Issued Jun 2025', credentialId: 'UC-5c90c4c1-57e5-4c9b-980f-77a4d7eee0f1/' },
+                { title: 'Advanced React For Enterprise: React for senior engineers', provider: 'Coursera', providerIcon: '🎓', issued: 'Issued Jun 2025', credentialId: 'UC-13000c38-aa13-45b2-9688-faaa233fb472/' },
+                { title: 'React Native - The Practical Guide [2025]', provider: 'Udemy', providerIcon: '🎓', issued: 'Issued Nov 2025', credentialId: 'UC-f42b0360-15b1-4cb9-b1f6-a006ab3d00a8' },
+                { title: 'TypeScript for Professionals', provider: 'Udemy', providerIcon: '🎓', issued: 'Issued Feb 2025', credentialId: 'UC-9e02dd0c-7cd1-4bd2-b058-1c69e30ac68f/' },
+                { title: 'Playwright: Web Automation Testing From Zero to Hero', provider: 'FrontendMasters', providerIcon: '🎓', issued: 'Issued Jun 2025', credentialId: 'UC-f9301a51-148e-4812-b166-98b96b847ea8/' },
+                { title: 'Udemy Labs - Online Kubernetes Lab for Beginners - Hands On', provider: 'Udemy', providerIcon: '🎓', issued: 'Issued Feb 2024', credentialId: '2DECCBF7C697-2DECD1CF9BCC-2DECC5C4B649' },
             ].map(c => (
-              <div key={c} className="course-item">
-                <span className="course-dot" />
-                {c}
+              <div key={c.title} className="course-item" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                <div style={{ flex: 1 }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                    {c.providerIcon && <span style={{ fontSize: '1.1rem' }}>{c.providerIcon}</span>}
+                    <strong>{c.title}</strong>
+                  </div>
+                  {c.issued && <div style={{ fontSize: '0.85rem', color: '#6b7280' }}>{c.issued}</div>}
+                </div>
+                {c.credentialId && (
+                  <a
+                    className="credential-btn"
+                    href={`https://www.udemy.com/certificate/${c.credentialId}`}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Show credential ↗️
+                  </a>
+                )}
               </div>
             ))}
           </div>
