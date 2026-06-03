@@ -18,7 +18,7 @@ export default function Skills() {
   return (
     <section id="skills" className="skills section">
       <div className="container">
-        <div className="section-label">04 / Skills</div>
+        <div className="section-label">Skills</div>
         <h2 className="section-title">Technology <em>Stack</em></h2>
         <p className="skills-sub">8 years of building — here's what's in the toolkit.</p>
         <div className="skills-grid">

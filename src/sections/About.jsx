@@ -21,7 +21,7 @@ export default function About() {
               to scalable Node.js/Python APIs and cloud-native deployments.
             </p>
             <p>
-              Currently at <strong>SambaNova Systems</strong>, I am building the SambaVerse GenAI platform
+              Currently at <strong>SambaNova Systems</strong>, I am building the SambaCloud GenAI platform
               — leading full-stack development, test automation, design systems, and the migration from
               CRA to Remix. Before that, I drove major performance wins at <strong>Meesho</strong> and
               helped rebuild <strong>AJIO's</strong> fashion storefront from the ground up.
@@ -34,7 +34,7 @@ export default function About() {
           </div>
 
           <div className="about-courses">
-            <p className="section-label" style={{ marginTop: '1.5rem' }}>Continuous Learning</p>
+            <p className="section-label" style={{ marginTop: '1.5rem' }}>Certifications</p>
             {[
               'Advanced React For Enterprise: React for senior engineers',
               'Working with Microservices in Go (Golang)',
@@ -51,7 +51,7 @@ export default function About() {
         </div>
 
         <div className="about-right">
-          <div className="about-card-grid">
+          <div className="about-grid">
             {highlights.map(h => (
               <div key={h.label} className="about-card">
                 <span className="about-card-icon">{h.icon}</span>

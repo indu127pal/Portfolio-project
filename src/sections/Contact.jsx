@@ -4,7 +4,7 @@ export default function Contact() {
   return (
     <section id="contact" className="contact section">
       <div className="container">
-        <div className="section-label">05 / Contact</div>
+        <div className="section-label">Contact</div>
         <div className="contact-inner">
           <h2 className="contact-heading">Let's build something<br/><em>remarkable</em> together.</h2>
           <p className="contact-sub">
@@ -41,12 +41,12 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      <footer className="site-footer">
+      {/* <footer className="site-footer">
         <div className="container">
           <span>© 2025 Indu Pal · Built with React + Vite</span>
           <span className="footer-right">Designed & Developed by Indu Pal</span>
         </div>
-      </footer>
+      </footer> */}
     </section>
   )
 }

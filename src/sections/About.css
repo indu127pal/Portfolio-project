@@ -1,9 +1,10 @@
 .about { padding: 8rem 0; }
 .about-grid {
   display: grid;
-  grid-template-columns: 1fr 420px;
-  gap: 4rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
   margin-top: 3rem;
+  margin-bottom: 2rem;
   align-items: start;
 }
 .about-body {
@@ -37,7 +38,7 @@
   border: 1px solid var(--border);
   border-radius: 16px;
   padding: 1.5rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
 }
 .about-card-header {
   font-family: var(--font-mono);

@@ -9,8 +9,8 @@ const projects = [
     desc: 'A real-time financial analytics dashboard for payment processing companies. Features transaction monitoring, fraud detection alerts, revenue breakdowns, and multi-currency ledger views. Built with live WebSocket data streams and sub-100ms update latency.',
     stack: ['React', 'TypeScript', 'Node.js', 'WebSockets', 'Chart.js', 'PostgreSQL'],
     highlights: ['Live transaction feed with fraud score visualisation', 'Multi-currency P&L reports with CSV export', 'Role-based access (admin, analyst, auditor)', 'Dark-mode first, WCAG AA accessible'],
-    github: 'https://github.com/indu127pal',
-    demo: '#',
+    github: 'https://github.com/indu127pal/PayFlow',
+    demo: 'https://pay-flow-drab.vercel.app/',
     icon: '💳',
   },
   {
