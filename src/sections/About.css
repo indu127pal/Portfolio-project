@@ -49,6 +49,11 @@
   color: var(--muted);
   margin-bottom: 1rem;
 }
+/* .about-courses {
+  display: flex;
+  flex-direction: column;
+  padding: auto;
+} */
 .cert-label {
   font-family: var(--font-display);
   font-size: 2rem;
@@ -59,11 +64,11 @@
 .credential-btn {
   font-family: var(--font-mono);
   font-size: 0.72rem;
-  color: var(--accent2);
+  color: #06d6a0;
   text-decoration: none;
   padding: 0.3rem 0.8rem;
   border: 1px solid rgba(0,229,160,0.3);
-  border-radius: 6px;
+  border-radius: 100px;
   transition: all 0.2s;
 }
 .edu-degree {
